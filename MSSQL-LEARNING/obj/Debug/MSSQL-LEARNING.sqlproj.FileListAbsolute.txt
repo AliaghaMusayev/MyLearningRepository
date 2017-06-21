@@ -1,0 +1,9 @@
+C:\Users\aliaga.musayev\Documents\Visual Studio 2013\Projects\MSSQL-LEARNING\MSSQL-LEARNING\bin\Debug\MSSQL-LEARNING.dacpac
+C:\Users\aliaga.musayev\Documents\Visual Studio 2013\Projects\MSSQL-LEARNING\MSSQL-LEARNING\bin\Debug\MSSQL_LEARNING.dll
+C:\Users\aliaga.musayev\Documents\Visual Studio 2013\Projects\MSSQL-LEARNING\MSSQL-LEARNING\bin\Debug\MSSQL_LEARNING.pdb
+C:\Users\aliaga.musayev\Documents\Visual Studio 2013\Projects\MSSQL-LEARNING\MSSQL-LEARNING\obj\Debug\Model.xml
+C:\Users\aliaga.musayev\Documents\Visual Studio 2013\Projects\MSSQL-LEARNING\MSSQL-LEARNING\obj\Debug\refactor.xml
+C:\Users\aliaga.musayev\Documents\Visual Studio 2013\Projects\MSSQL-LEARNING\MSSQL-LEARNING\obj\Debug\postdeploy.sql
+C:\Users\aliaga.musayev\Documents\Visual Studio 2013\Projects\MSSQL-LEARNING\MSSQL-LEARNING\obj\Debug\predeploy.sql
+C:\Users\aliaga.musayev\Documents\Visual Studio 2013\Projects\MSSQL-LEARNING\MSSQL-LEARNING\obj\Debug\MSSQL_LEARNING.dll
+C:\Users\aliaga.musayev\Documents\Visual Studio 2013\Projects\MSSQL-LEARNING\MSSQL-LEARNING\obj\Debug\MSSQL_LEARNING.pdb
