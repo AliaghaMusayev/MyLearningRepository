@@ -7,3 +7,8 @@ C:\Users\aliaga.musayev\Documents\Visual Studio 2013\Projects\MSSQL-LEARNING\MSS
 C:\Users\aliaga.musayev\Documents\Visual Studio 2013\Projects\MSSQL-LEARNING\MSSQL-LEARNING\obj\Debug\predeploy.sql
 C:\Users\aliaga.musayev\Documents\Visual Studio 2013\Projects\MSSQL-LEARNING\MSSQL-LEARNING\obj\Debug\MSSQL_LEARNING.dll
 C:\Users\aliaga.musayev\Documents\Visual Studio 2013\Projects\MSSQL-LEARNING\MSSQL-LEARNING\obj\Debug\MSSQL_LEARNING.pdb
+D:\GitHUB\trunk\MSSQL-LEARNING\bin\Debug\MSSQL-LEARNING.dacpac
+D:\GitHUB\trunk\MSSQL-LEARNING\bin\Debug\MSSQL_LEARNING.dll
+D:\GitHUB\trunk\MSSQL-LEARNING\bin\Debug\MSSQL_LEARNING.pdb
+D:\GitHUB\trunk\MSSQL-LEARNING\obj\Debug\MSSQL_LEARNING.dll
+D:\GitHUB\trunk\MSSQL-LEARNING\obj\Debug\MSSQL_LEARNING.pdb
