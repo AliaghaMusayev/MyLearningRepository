@@ -58,3 +58,33 @@ foreign key(specialtyId) references Specialty(spcID)
 
 -- *** CHECK CONSTRAINT *** 
 
+
+create table test
+(
+id int identity(1,1) primary key,
+name nvarchar(20)
+);
+
+select * from test
+
+insert into test VALUES('CCC')
+-- Tutaq ki biz cedvelde her hansi Id ni sildik... Eger biz davam etsek bu zaman silinmis id-ni istifade etmeyecek sistem.. Eger silinmis Id-ni manual yazmaq istesek
+
+--meselen Id=1 silek
+delete from test where id=1
+
+SET IDENTITY_INSERT test ON 
+
+-- bundan sonra biz lazimi id-ni istifade ede bilerik. Ancaq sorgunu mutlqe asagida kimi yazmaliyiq.. Field-leri qeyd etmeliyik
+insert into test(id,name) values(1,'fffff')
+
+-- bundan sonra eger istesek ki identity avtomatik ishlesin onda gerek Identity_insert off edek
+SET IDENTITY_INSERT test OFF
+
+-- TESEVVUR EDEK KI CEDVELDEKI BUTUN DATALARI SILIRIK
+delete from test
+-- bu zaman baxmayaraq ki butun datalar silinib ancaq identity basdan baslamiyacaq.. harda qalmisdisa ordan basliyacaq
+-- identity-ni sifirlamaq ucun asaqidaki emrden istifade edirik
+
+DBCC CHECKIDENT(test,reseed,0)
+
