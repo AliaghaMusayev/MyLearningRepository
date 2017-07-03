@@ -67,6 +67,9 @@ name nvarchar(20)
 
 select * from test
 
+alter table test
+Add PhoneNumber nvarchar(15)
+
 insert into test VALUES('CCC')
 -- Tutaq ki biz cedvelde her hansi Id ni sildik... Eger biz davam etsek bu zaman silinmis id-ni istifade etmeyecek sistem.. Eger silinmis Id-ni manual yazmaq istesek
 
@@ -88,3 +91,43 @@ delete from test
 
 DBCC CHECKIDENT(test,reseed,0)
 
+-- ***** PRIMARY KEY VS UNIQUE KEY *****
+-- Bir cedvelde 1 primary key ola biler, lakin istenilen sayda unique key ola biler
+-- Primary key null value ala bilmez,lakin unique key 1 null value ala biler
+
+alter table test
+add constraint UQ_test_PhoneNumber Unique(PhoneNumber)
+
+-- ALL ABOUT SELECT STATEMENT --
+-- Eger cedvel ucun selectin avtomatik yazilmasini istesek o zaman: 
+-- Cedvelin ustunde saq klik edirik.. Acilan pencereden Script As -> Select new query
+
+-- *DISTINCT* sutunda ancaq ferqli deyerleri goturecek
+select distinct PhoneNumber, * from test
+
+-- Like - 
+select * from test where name like 'A_d%' -- bu o demekdir ki ad A herfi ile baslasin ve A-dan 1 simvol sora d herfi olsin.. daha sonra istenilen simvol ola biler
+select * from test where name like '[ABFD]%' -- BU O DEMEKDIR KI secilen adlar  A B D F herfleri ile baslasin
+select * from test where name not like '[ABFD]%' -- bu ise yuxaridakinin eksidir
+select * from test where name like '[^ABFD]%' -- bu da not like mentiqi ile ishleyecek.. Adlar verilen herfler ile baslamiyan adlari sececek
+select * from test where id like '1%'
+
+-- TOP AND TOP PERCENTAGE
+-- bu o zaman faydalidir ki:
+-- meselen biz her hansi cedvelin strukturun gormek istesek lakin cedvel cox boyukdu, select * yazsaq butun cedveli getirecek.. bu da zaman ve performance itgisidir
+-- bunun qarsisini almaq ucun meselen deyuirik ki ilk 10 melumati getir
+select top 10 * from test
+select top 20 id, name from test
+
+select top 10 percent * from test
+select top 5 percent id, name from test
+
+use master
+go
+select * from student
+
+-- TOP ucun praktik numune
+-- Student cedvelinde yasin en cox olan 2 telebeni sec
+select top 2 * from student order by Age desc
+
+-- GROUP BY
